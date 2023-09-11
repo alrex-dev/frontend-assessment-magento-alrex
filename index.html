@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Frontend Assessment - Magento">
+    <meta name="author" content="Alrex Consus">
+
+    <title>Frontend Assessment - Magento</title>
+
+    <!--- Favicon --->
+    <!--<link rel="shortcut icon" href="includes/images/favicon.png">-->
+
+    <!--- Base URL --->
+    <script type="text/javascript" language="javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="assets/js/knockout.min.js"></script>
+    <script type="text/javascript" language="javascript" src="assets/js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container-fluid">
+            <h1 class="page-title">Hello Developer!</h1>
+            <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="image-watermark">Powered by HTML.COM</div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4 card-spacer">
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__image-wrapper">
+                                <img src="assets/images/400x300.png" alt="Image 1" />
+                                <div class="image-watermark">Powered by HTML.COM</div>
+                            </div>
+                            <div class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            <div class="card__button-container"><a href="#" class="card__button-container__button">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 card-spacer">
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__image-wrapper">
+                                <img src="assets/images/400x300.png" alt="Image 1" />
+                                <div class="image-watermark">Powered by HTML.COM</div>
+                            </div>
+                            <div class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alliqua.</div>
+                            <div class="card__button-container"><a href="#" class="card__button-container__button">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 card-spacer">
+                    <div class="card">
+                        <div class="card__inner">
+                            <div class="card__image-wrapper">
+                                <img src="assets/images/400x300.png" alt="Image 1" />
+                                <div class="image-watermark">Powered by HTML.COM</div>
+                            </div>
+                            <div class="card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+                            <div class="card__button-container"><a href="#" class="card__button-container__button">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exercise-2 container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tabs-container">
+                        <ul class="tabs" data-bind="foreach: tabs">
+                            <li class="tabs__item" data-bind="css: $parent.tabClass($index())">
+                                <a href="#" class="tabs__item__button" data-bind="attr: {'data-target': target}, text: title, click: $root.selectTab"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs-content-container" data-bind="foreach: tabs">
+                        <div class="tabs-content" data-bind="attr: {id: id}, css: $parent.tabContentClass($index())">
+                            <div class="tabs-content__button"><a href="#" class="tabs-content__button__handle" data-bind="text: title, click: $root.selectAccordion"></a></div>
+                            <div class="tabs-content__inner"><div class="tabs-content__inner__wrapper" data-bind="html: content"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
