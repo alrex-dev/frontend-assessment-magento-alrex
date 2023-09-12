@@ -159,7 +159,6 @@ body {
   position: relative;
   height: 100%;
   padding: 20px 20px 78px 20px;
-  //margin-bottom: 37px;
   box-shadow: 0 0 3px $color_gray;
   border-radius: 10px;
   transition: transform 0.2s ease-in-out;
@@ -231,6 +230,7 @@ body {
   padding-bottom: 37px;
 }
 
+//--------------------
 //Exercise 2
 
 .exercise-2 {
@@ -267,28 +267,6 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
 
-    /*
-    &:first-child::before {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 1px;
-      left: -30px;
-      bottom: 0;
-      background-color: $color_gray;
-    }
-
-    &:last-child::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 1px;
-      right: -30px;
-      bottom: 0;
-      background-color: $color_gray;
-    }
-    */
-
     &--active {
       background-color: $color_white;
       border-bottom-color: $color_white;
@@ -315,15 +293,11 @@ body {
 
 .tabs-content-container {
   position: relative;
-  //overflow: hidden;
   border-top: 1px solid $color_gray;
 }
 
 .tabs-content {
-  //position: absolute;
-  //width: calc(100% - 60px);
   padding: 0;
-  //opacity: 0;
   background-color: $color_white;
   border-bottom: 1px solid $color_gray;
 
@@ -355,7 +329,6 @@ body {
   &__inner {
     overflow: hidden;
     max-height: 0;
-    //transition: all 0.5s ease-in-out;
 
     &__wrapper {
       padding: 0 30px 30px 30px;

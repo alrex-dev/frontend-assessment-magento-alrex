@@ -3,7 +3,6 @@ let tabList = [];
 function tabsViewModel($) {
     var self = this;
     
-    //console.log(tabList);
     self.tabs = tabList;
     
     self.selectTab = function(obj, obj2) {
@@ -19,8 +18,6 @@ function tabsViewModel($) {
 
         $(obj2.currentTarget).parent().addClass('tabs__item--active');
         $(target).addClass('tabs-content--active');
-        
-        console.log(target, $(target));
     };
 
     self.tabClass = function(index) {
@@ -45,13 +42,9 @@ function tabsViewModel($) {
 }
 
 $(document).ready(function() {
-    //console.log(('a' + +'a'));
-
     $.getJSON('data.json', function(res) {
-        //console.log(tabList);
-        //tabList = res;
-
         let counter = 1;
+
         for(var x=0; x<res.length; x++) {
             tabList.push({
                 title: res[x].title,
@@ -75,41 +68,4 @@ $(document).ready(function() {
             $(self).addClass('animate--show');
         }, delay);
     });
-
-    /*
-    $('.exercise-2 .tabs-container .tabs__item__button').each(function() {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-
-            var target = $(this).data('target');
-
-            $('.exercise-2 .tabs-container .tabs__item').each(function() {
-                $(this).removeClass('tabs__item--active');
-            });
-
-            $('.exercise-2 .tabs-content-container .tabs-content').each(function() {
-                $(this).removeClass('tabs-content--active');
-            });
-
-            $(this).parent().addClass('tabs__item--active');
-            $(target).addClass('tabs-content--active');
-        });
-    });
-
-    $('.exercise-2 .tabs-content-container .tabs-content .tabs-content__button__handle').each(function() {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-
-            var currActive = $(this).parents('.tabs-content').hasClass('tabs-content--active');
-
-            $('.exercise-2 .tabs-content-container .tabs-content').each(function() {
-                $(this).removeClass('tabs-content--active');
-            });
-            
-            if (!currActive) {
-                $(this).parents('.tabs-content').addClass('tabs-content--active');
-            }
-        });
-    });
-    */
 });
