@@ -11,7 +11,9 @@ Add/create a tabs section (desktop) or accordion section (mobile) with the given
 Installation
 ---
 
-To view the page with no JavaScript errors, please setup the files in a web server (localhost).
+To view the page with no JavaScript errors, please setup the files on a web server (localhost).
+
+Limitation: jQuery's $.getJSON() tends to show a CORS error if the files are not setup on a web server.
 
 
 Exercise 1
