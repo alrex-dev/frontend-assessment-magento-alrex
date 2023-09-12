@@ -45,6 +45,8 @@ function tabsViewModel($) {
 }
 
 $(document).ready(function() {
+    //console.log(('a' + +'a'));
+
     $.getJSON('data.json', function(res) {
         //console.log(tabList);
         //tabList = res;
@@ -62,6 +64,16 @@ $(document).ready(function() {
         }
 
         ko.applyBindings(new tabsViewModel($));
+    });
+
+    $('.header .page-title').addClass('page-title--show');
+    $('.animate').each(function() {
+        let self = this;
+        let delay = parseInt($(this).data('animation-delay'));
+
+        setTimeout(function() {
+            $(self).addClass('animate--show');
+        }, delay);
     });
 
     /*
