@@ -32,7 +32,7 @@ Exercise 2
 ---
 Still in the `index.html` file at the bottom you can see the tabs section on desktop and accordion section on mobile. The tab names and contents are coming from the `data.json` file and are dynamically constructed. The tab and accordion functionality and animation are made possible by CSS and jQuery. 
 
-The tab or accordion structure is dynamically contructed using [Knockout.js](https://knockoutjs.com/).
+The tab or accordion structure is dynamically constructed using [Knockout.js](https://knockoutjs.com/).
 
 All the JavaScript files are found in `assets/js` directory.
 
@@ -44,4 +44,4 @@ Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
 - There are only two parts in the expression above - the string concatenation `('b' + 'a' + + 'a' + 'a')` and the transformation of the string to lower case `toLowerCase()`
 - The operators and the operands in concatenation part of the expression are all normal except for this part `+ + 'a'`. The second plus operator is understood by the compiler as a unary plus operator that forces the compiler to cast `'a'` as a number which is not possible as it is a string, thus returning `NaN`.
 - So the expression will be converted to this `('b' + 'a' + NaN + 'a').toLowerCase()`
-- And when the contacatenation operation is performed, it will return the string `banana`
+- And when the concatenation operation is performed, it will return the string `banana`
