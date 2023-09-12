@@ -1,6 +1,6 @@
 Introduction
 ---
-This test project is for the "Frontend skills" assessment for MindArc. This contains solutions for the 2 given exercises. And, a bunos question to explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+This test project is for the "Frontend skills" assessment for MindArc. This contains solutions for the 2 given exercises. And, a bonus question to explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
 
 ##### Exercise 1
 Build a responsive and fluid page based on the given designs or mockup.
