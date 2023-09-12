@@ -8,6 +8,11 @@ Build a responsive and fluid page based on the given designs or mockup.
 ##### Exercise 2
 Add/create a tabs section (desktop) or accordion section (mobile) with the given JSON data.
 
+Installation
+---
+
+To view the page with no JavaScript errors, please setup the files in a web server (localhost).
+
 
 Exercise 1
 ---
